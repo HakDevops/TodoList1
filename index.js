@@ -27,11 +27,14 @@
 
             }) ;
             // taskItem.remove())
+           
+
+
 
             // ajouter un boutton modifier
             const editbutton = document.createElement('button');
             editbutton.textContent = 'Modifier ';
-            editbutton.innerHTML +='<ion-icon name="pencil-outline"></ion-icon>'
+            editbutton.innerHTML +='<ion-icon name="pencil-outline"></ion-icon>';
             editbutton.classList.add('edit-btn');
             editbutton.addEventListener('click', () =>{
                 let newText = prompt("modifier la tache ",taskItem.textContent);
@@ -39,6 +42,8 @@
                     return
                 }else{
                     taskItem.firstChild.textContent = newText;
+                    
+                   
                 }
             }  )
     
